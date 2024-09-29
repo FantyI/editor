@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>2day</title>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="options">
+            <button class="bt-option" id="bold">
+                <i class="fa-solid fa-bold"></i>
+            </button>
+
+            <button class="bt-option script" id="superscript">
+                <i class="fa-solid fa-superscript"></i>
+            </button>
+            <button class="bt-option script" id="subscript">
+                <i class="fa-solid fa-subscript"></i>
+            </button>
+
+            <button class="bt-option list" id="insertOrderedList">
+                <i class="fa-solid fa-list-ol"></i>
+            </button>
+            <button class="bt-option list" id="insertUnorderedList">
+                <i class="fa-solid fa-list-ul"></i>
+            </button>
+
+            <button class="bt-option rotate" id="undo">
+                <i class="fa-sharp fa-solid fa-arrow-rotate-left"></i>
+            </button>
+            <button class="bt-option rotate" id="redo">
+                <i class="fa-solid fa-arrow-rotate-right"></i>
+            </button>
+
+            <button class="bt-option" id="createLink">
+                <i class="fa-solid fa-link"></i>
+            </button>
+            <button class="bt-option" id="unlink">
+                <i class="fa-solid fa-link-slash"></i>
+            </button>
+
+            <button class="bt-option align" id="justifyLeft">
+                <i class="fa-solid fa-align-left"></i>
+            </button>
+            <button class="bt-option align" id="justifyCenter">
+                <i class="fa-solid fa-align-center"></i>
+            </button>
+            <button class="bt-option align" id="justifyRight">
+                <i class="fa-solid fa-align-right"></i>
+            </button>
+            <button class="bt-option align" id="justifyFull">
+                <i class="fa-solid fa-align-justify"></i>
+            </button>
+
+            <button class="bt-option dent" id="outdent">
+                <i class="fa-solid fa-indent"></i>
+            </button>
+            <button class="bt-option dent" id="indent">
+                <i class="fa-solid fa-outdent"></i>
+            </button>
+
+            <select name="" id="fontSize" class="add-bt-option"></select>
+            <select name="" id="fontName" class="add-bt-option"></select>
+
+            <div class="colorWrap">
+                <input type="color" id="foreColor" class="add-bt-option">
+                <label for="fontColor">Font Color</label>
+            </div>
+
+            <div class="colorWrap">
+                <input type="color" id="backColor" class="add-bt-option">
+                <label for="HighlightColor">Highlight Color</label>
+            </div>
+        </div>
+
+        <div class="inputField" contenteditable="true"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
